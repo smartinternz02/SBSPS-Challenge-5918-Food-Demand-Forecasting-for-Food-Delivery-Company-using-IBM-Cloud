@@ -1,0 +1,476 @@
+[
+    {
+        "id": "ddb57f8b2e8a5524",
+        "type": "tab",
+        "label": "Insurance",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7903c8db0eb0a3d6",
+        "type": "ui_form",
+        "z": "ddb57f8b2e8a5524",
+        "name": "",
+        "label": "",
+        "group": "6d46c59b135306bf",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "age",
+                "value": "age",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "children",
+                "value": "children",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "bmi",
+                "value": "bmi",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "age": "",
+            "children": "",
+            "bmi": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 80,
+        "y": 80,
+        "wires": [
+            [
+                "d427057eb85c51de",
+                "a4d5b61bba597f0b"
+            ]
+        ]
+    },
+    {
+        "id": "d427057eb85c51de",
+        "type": "debug",
+        "z": "ddb57f8b2e8a5524",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 130,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "3cfdaa9821a28085",
+        "type": "ui_dropdown",
+        "z": "ddb57f8b2e8a5524",
+        "name": "",
+        "label": "Enter the sex",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "6d46c59b135306bf",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "male",
+                "value": "male",
+                "type": "str"
+            },
+            {
+                "label": "female",
+                "value": "female",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 70,
+        "y": 300,
+        "wires": [
+            [
+                "90ce3ef8eb355868"
+            ]
+        ]
+    },
+    {
+        "id": "49725b88e86ae5e4",
+        "type": "ui_dropdown",
+        "z": "ddb57f8b2e8a5524",
+        "name": "",
+        "label": "are you smoker?",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "6d46c59b135306bf",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "yes",
+                "value": "yes",
+                "type": "str"
+            },
+            {
+                "label": "no",
+                "value": "no",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 90,
+        "y": 360,
+        "wires": [
+            [
+                "1abab1cd69e72d43"
+            ]
+        ]
+    },
+    {
+        "id": "339ca9e5a3135214",
+        "type": "ui_dropdown",
+        "z": "ddb57f8b2e8a5524",
+        "name": "",
+        "label": "enter your region",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "6d46c59b135306bf",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "northeast",
+                "value": "northeast",
+                "type": "str"
+            },
+            {
+                "label": "northwest",
+                "value": "northwest",
+                "type": "str"
+            },
+            {
+                "label": "southwest",
+                "value": "southwest",
+                "type": "str"
+            },
+            {
+                "label": "southeast",
+                "value": "southeast",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 90,
+        "y": 440,
+        "wires": [
+            [
+                "9dc8c736aed6f50b"
+            ]
+        ]
+    },
+    {
+        "id": "90ce3ef8eb355868",
+        "type": "debug",
+        "z": "ddb57f8b2e8a5524",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1abab1cd69e72d43",
+        "type": "debug",
+        "z": "ddb57f8b2e8a5524",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "9dc8c736aed6f50b",
+        "type": "debug",
+        "z": "ddb57f8b2e8a5524",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "a4d5b61bba597f0b",
+        "type": "function",
+        "z": "ddb57f8b2e8a5524",
+        "name": "Global Variable for form node",
+        "func": "global.set(\"age\", msg.payload.age)\nglobal.set(\"children\", msg.payload.children)\nglobal.set(\"bmi\", msg.payload.bmi)\nvar apikey=\"QTjdJqs1VbZKtK0N3lJNvXm-E525TI6k05ZDtJHy7ZiT\"\nmsg.headers={\"content-type\":\"application/x-www-form-urlencoded\"}\nmsg.payload={\"grant_type\":\"urn:ibm:params:oauth:grant-type:apikey\",\"apikey\":apikey}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 40,
+        "wires": [
+            [
+                "df68190310ab2abc"
+            ]
+        ]
+    },
+    {
+        "id": "09f58b63ed55249b",
+        "type": "function",
+        "z": "ddb57f8b2e8a5524",
+        "name": "global variable for sex",
+        "func": "global.set(\"sex\",msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dabe6740efede51a",
+        "type": "function",
+        "z": "ddb57f8b2e8a5524",
+        "name": "global variable for smoker",
+        "func": "global.set(\"smoker\",msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "11f366af2561365d",
+        "type": "function",
+        "z": "ddb57f8b2e8a5524",
+        "name": "global variable for region",
+        "func": "global.set(\"region\",msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "df68190310ab2abc",
+        "type": "http request",
+        "z": "ddb57f8b2e8a5524",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://iam.cloud.ibm.com/identity/token",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 350,
+        "y": 100,
+        "wires": [
+            [
+                "66796b673081abe2",
+                "fde2d01bc0285b2d"
+            ]
+        ]
+    },
+    {
+        "id": "66796b673081abe2",
+        "type": "debug",
+        "z": "ddb57f8b2e8a5524",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "fde2d01bc0285b2d",
+        "type": "function",
+        "z": "ddb57f8b2e8a5524",
+        "name": "Pre-prediction",
+        "func": "var age=global.get(\"age\")\nvar sex=global.get(\"sex\")\nvar bmi=global.get(\"bmi\")\nvar smoker=global.get(\"smoker\")\nvar region=global.get(\"region\")\nvar children=global.get(\"children\")\nvar token=msg.payload.access_token\nmsg.headers={'Content-Type':'application/json',\"Authorization\":\"Bearer \"+token,\"Accept\":\"application/json\"}\nmsg.payload={\"input_data\":[{\"fields\":[[\"age\", \"sex\", \"bmi\", \"children\", \"smoker\", \"region\"]],\"values\":[[age,sex,bmi,children,smoker,region]]}]}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 180,
+        "wires": [
+            [
+                "3baf187688af94ba"
+            ]
+        ]
+    },
+    {
+        "id": "3baf187688af94ba",
+        "type": "http request",
+        "z": "ddb57f8b2e8a5524",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://eu-gb.ml.cloud.ibm.com/ml/v4/deployments/c0436db4-c49a-4b78-a242-1df9ad6e1e88/predictions?version=2021-12-30",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 550,
+        "y": 180,
+        "wires": [
+            [
+                "c0aaa22a95404bf6"
+            ]
+        ]
+    },
+    {
+        "id": "c0aaa22a95404bf6",
+        "type": "function",
+        "z": "ddb57f8b2e8a5524",
+        "name": "",
+        "func": "msg.payload=msg.payload.predictions[0].values[0][0]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 240,
+        "wires": [
+            [
+                "bf06c1efd04d2b87",
+                "9712215f665ab05c"
+            ]
+        ]
+    },
+    {
+        "id": "bf06c1efd04d2b87",
+        "type": "debug",
+        "z": "ddb57f8b2e8a5524",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "9712215f665ab05c",
+        "type": "ui_text",
+        "z": "ddb57f8b2e8a5524",
+        "group": "6d46c59b135306bf",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Premium will be: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 690,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "6d46c59b135306bf",
+        "type": "ui_group",
+        "name": "Enter the Value",
+        "tab": "f13586e0ac14367a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f13586e0ac14367a",
+        "type": "ui_tab",
+        "name": "Insurance Prediction",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
